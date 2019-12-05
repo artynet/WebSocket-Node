@@ -11,7 +11,7 @@ test('W3CWebSockets adding event listeners with ws.onxxxxx', function(t) {
   startEchoServer(function(err, echoServer) {
     if (err) { return t.fail('Unable to start echo server: ' + err); }
 
-    var ws = new WebSocket('ws://localhost:8080/');
+    var ws = new WebSocket('ws://localhost:47512/');
 
     ws.onopen = function() {
       t.equal(++counter, 1, 'onopen should be called first');
@@ -45,7 +45,7 @@ test('W3CWebSockets adding event listeners with ws.addEventListener', function(t
   startEchoServer(function(err, echoServer) {
     if (err) { return t.fail('Unable to start echo server: ' + err); }
 
-    var ws = new WebSocket('ws://localhost:8080/');
+    var ws = new WebSocket('ws://localhost:47512/');
 
     ws.addEventListener('open', function() {
       t.equal(++counter, 1, '"open" should be fired first');

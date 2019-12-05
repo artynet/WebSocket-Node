@@ -26,6 +26,6 @@ test('Issue 195 - passing number to connection.send() shouldn\'t throw', functio
       t.end();
     });
     
-    client.connect('ws://localhost:8080', null);
+    client.connect('ws://localhost:47512', null);
   });
 });

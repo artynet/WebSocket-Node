@@ -13,7 +13,7 @@ function startEchoServer(outputStream, callback) {
   
   console.log(path);
     
-  var echoServer = require('child_process').spawn('node', [ path ]);
+  var echoServer = require('child_process').spawn('node', [ path, '--port=47512' ]);
   
   var state = 'starting';
   
